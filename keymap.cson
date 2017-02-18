@@ -1,0 +1,61 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+# 常に真ん中で上下移動
+'atom-workspace atom-text-editor.emacs-plus:not([mini])':
+  'alt-n': 'custom:recenter-and-move-down'
+  'alt-p': 'custom:recenter-and-move-up'
+
+# タブ移動
+'body':
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+# undo割り当て
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-/': 'core:undo'
+# フォーカスの移動
+'atom-workspace atom-text-editor':
+  'ctrl-t': 'window:focus-next-pane'
+# 全て保存
+'atom-workspace':
+  'ctrl-x s': 'window:save-all'
+
+# 自動インデント整形
+'atom-text-editor':
+  'ctrl-i': 'editor:auto-indent'
+
+#フォルダ内の検索（未設定）
+# 'atom-workspace':
+#   'alt-x d': 'project-find:show'

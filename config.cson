@@ -1,0 +1,67 @@
+"*":
+  "atom-beautify":
+    fortran:
+      emacs_path: "C:\\emacs\\emacs-24.5-IME-patched\\bin\\emacs-24.5.exe"
+      emacs_script_path: "C:\\Users\\Takas\\Google ドライブ\\dotfiles\\.emacs.d\\emacs-fortran-formating-script.lisp"
+    general:
+      _analyticsUserId: "7bcac6f9-2b59-42e3-95fe-08bb43971137"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#0080ff"
+    fonts: {}
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+  core:
+    disabledPackages: [
+      "wrap-guide"
+      "sync-settings"
+    ]
+    fileEncoding: "shiftjis"
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "symbols-view"
+    ]
+    themes: [
+      "atom-material-ui"
+      "monokai"
+    ]
+  "disable-keybindings":
+    allCommunityPackages: true
+    bundledPackages: [
+      "go-to-line"
+      "bracket-matcher"
+      "fuzzy-finder"
+      "find-and-replace"
+    ]
+    exceptCommunityPackages: [
+      "emacs-plus"
+      "atomic-emacs"
+      "expose"
+    ]
+    prefixKeys: [
+      "ctrl-k"
+    ]
+  editor:
+    fontSize: 15
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+  "exception-reporting":
+    userId: "6dcebabf-ce2b-cd6a-167c-17992c871cb6"
+  linter: {}
+  minimap:
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+  "remove-all-keybindings": {}
+  "tree-view":
+    autoReveal: true
+    showOnRightSide: true
+  welcome:
+    showOnStartup: false
